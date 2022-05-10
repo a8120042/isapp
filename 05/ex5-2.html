@@ -11,7 +11,9 @@
 
     <script>
         $().ready(function () {
-            doSelect();
+            x = 0;
+            setInterval(doSelect, 2000);
+
         });
         function button1Pressed() {
             doInsert();
