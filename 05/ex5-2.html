@@ -10,11 +10,11 @@
     <script type="text/javascript" src="../osql.js"></script>
 
     <script>
+        $().ready(function () {
+            doSelect();
+        });
         function button1Pressed() {
             doInsert();
-        }
-        function button2Pressed() {
-            doSelect();
         }
 
         async function doSelect() {
