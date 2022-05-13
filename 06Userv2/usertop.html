@@ -10,10 +10,18 @@
     <script type="text/javascript" src="../osql.js"></script>
 
     <script>
+        var name = "";
         $().ready(function () {
-            var name = sessionStorage.getItem('userid');
+            name = sessionStorage.getItem('userid');
             document.getElementById("welcome").innerHTML = name;
         });
+
+        function change() {
+            location.href = 'update.html?userid=' + name;
+
+        }
+
+
 
     </script>
 
@@ -22,6 +30,7 @@
 <body>
     <h1>ユーザトップ</h1>
     <p id="welcome">ようこそxxさん</p>
+    <buttun onclick="change()">ユーザ情報変更</buttun>
     <hr>
 
 </body>
