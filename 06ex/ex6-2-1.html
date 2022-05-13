@@ -12,7 +12,7 @@
     <script>
         function buttonPressed() {
             var name = document.getElementById('tf1').value;
-            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('name', name);//ブラウザ内で情報を保持して別ページでも使える。(違うタブでも情報保持した場合はlocalStrageを使う)
             location.href = 'ex6-2-to.html';
         }
     </script>
